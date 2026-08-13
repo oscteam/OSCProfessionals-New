@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OSC Professionals — Brand & Style Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500;0,6..72,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="osc-clean.css" />
+<style>
+.sg-hero{padding:80px 0 56px;border-bottom:1px solid var(--line)}
+.sg-hero h1{font-size:clamp(40px,6vw,72px);letter-spacing:-.04em;line-height:1.02}
+.sg-hero p{font-size:19px;color:var(--body);max-width:560px;margin-top:20px}
+.sg-swatches{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
+.bigsw{width:120px;height:120px;border-radius:14px;display:flex;align-items:flex-end;padding:12px;font-size:12px;font-weight:600;border:1px solid var(--line-2)}
+.scaletitle{font-size:14px;font-weight:700;color:var(--ink);margin:30px 0 14px}
+.cgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.chip{border:1px solid var(--line-2);border-radius:11px;overflow:hidden;background:#fff}
+.chip .sw{height:80px}
+.chip .meta{padding:9px 11px}
+.chip .meta b{font-size:12.5px;display:block;letter-spacing:-.01em}
+.chip .meta code{font-size:10.5px;color:var(--muted);font-family:ui-monospace,monospace}
+.logo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.logo-cell{border:1px solid var(--line-2);border-radius:14px;height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;position:relative}
+.logo-cell img{height:40px}
+.logo-cell .cap{position:absolute;bottom:12px;left:14px;font-size:11.5px;color:var(--muted);font-weight:500}
+.logo-cell.dark{background:var(--ink)}
+.logo-cell.dark .cap{color:rgba(255,255,255,.6)}
+.logo-cell.soft{background:var(--bg-soft)}
+.typerow{border-top:1px solid var(--line);padding:24px 0;display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:baseline}
+.typerow .lab{font-size:12px;color:var(--muted);font-weight:600}
+.typerow .lab span{display:block;font-weight:400;margin-top:4px;color:var(--faint)}
+.specimen{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.specimen .card2{border:1px solid var(--line-2);border-radius:14px;padding:28px}
+.specimen .glyph{font-size:72px;line-height:1;margin-bottom:10px}
+.specimen .weights{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px}
+.specimen .weights span{font-size:15px;color:var(--body)}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card2{border:1px solid var(--line-2);border-radius:14px;padding:28px}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:5px 12px;border-radius:999px;border:1px solid var(--line-2);color:var(--body);background:var(--bg-soft)}
+.badge.solid{background:var(--ink);color:#fff;border-color:var(--ink)}
+.inp{width:100%;font-family:var(--sans);font-size:15px;padding:12px 14px;border:1px solid var(--line-2);border-radius:10px;background:#fff;color:var(--ink)}
+.inp:focus{outline:none;border-color:var(--ink)}
+.princ{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.princ .num{font-size:13px;font-weight:700;color:var(--faint)}
+@media(max-width:860px){
+  .cgrid{grid-template-columns:repeat(3,1fr)}
+  .specimen,.comp-grid,.princ{grid-template-columns:1fr}
+  .logo-grid{grid-template-columns:1fr}
+  .typerow{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="site" id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/logo-black.png" alt="OSC"/><b>OSC<span> Professionals</span></b></a>
+    <nav class="navlinks">
+      <a href="#colors">Colors</a>
+      <a href="#logo">Logo</a>
+      <a href="#type">Type</a>
+      <a href="#components">Components</a>
+    </nav>
+    <div class="nav-right"><a class="btn btn-primary" href="home-clean.html">View homepage</a></div>
+  </div>
+</header>
+
+<section class="sg-hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="pip"></span>Brand System · v2.0 · Monochrome</span>
+    <h1 style="margin-top:16px">The OSC <span class="serif">style guide.</span></h1>
+    <p>A clean, confident, near-monochrome visual language — white canvas, black ink, and a precise grey scale for everything in between.</p>
+    <div class="sg-swatches">
+      <div class="bigsw" style="background:#fff;color:#18181b">White<br/>#FFFFFF</div>
+      <div class="bigsw" style="background:#f7f7f8;color:#18181b">Soft<br/>#F7F7F8</div>
+      <div class="bigsw" style="background:#71717a;color:#fff;align-items:flex-end">Grey<br/>#71717A</div>
+      <div class="bigsw" style="background:#18181b;color:#fff;align-items:flex-end">Ink<br/>#18181B</div>
+    </div>
+  </div>
+</section>
+
+<!-- COLORS -->
+<section id="colors">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="pip"></span>01 — Palette</span>
+      <h2>A precise <span class="serif">grey scale.</span></h2>
+      <p>No brand colour competes with the work. Black for emphasis, a calibrated grey ramp for hierarchy, and warm-white surfaces for calm.</p>
+    </div>
+
+    <div class="scaletitle">Neutrals — text &amp; ink</div>
+    <div class="cgrid">
+      <div class="chip"><div class="sw" style="background:#18181b"></div><div class="meta"><b>Ink</b><code>#18181B</code></div></div>
+      <div class="chip"><div class="sw" style="background:#27272a"></div><div class="meta"><b>Ink soft</b><code>#27272A</code></div></div>
+      <div class="chip"><div class="sw" style="background:#52525b"></div><div class="meta"><b>Body</b><code>#52525B</code></div></div>
+      <div class="chip"><div class="sw" style="background:#71717a"></div><div class="meta"><b>Muted</b><code>#71717A</code></div></div>
+      <div class="chip"><div class="sw" style="background:#a1a1aa"></div><div class="meta"><b>Faint</b><code>#A1A1AA</code></div></div>
+      <div class="chip"><div class="sw" style="background:#d4d4d8"></div><div class="meta"><b>Line 3</b><code>#D4D4D8</code></div></div>
+    </div>
+
+    <div class="scaletitle">Surfaces &amp; lines</div>
+    <div class="cgrid">
+      <div class="chip"><div class="sw" style="background:#ffffff;border-bottom:1px solid var(--line)"></div><div class="meta"><b>White</b><code>#FFFFFF</code></div></div>
+      <div class="chip"><div class="sw" style="background:#fafafa"></div><div class="meta"><b>Sunken</b><code>#FAFAFA</code></div></div>
+      <div class="chip"><div class="sw" style="background:#f7f7f8"></div><div class="meta"><b>Soft</b><code>#F7F7F8</code></div></div>
+      <div class="chip"><div class="sw" style="background:#ececef"></div><div class="meta"><b>Line</b><code>#ECECEF</code></div></div>
+      <div class="chip"><div class="sw" style="background:#e1e1e4"></div><div class="meta"><b>Line 2</b><code>#E1E1E4</code></div></div>
+      <div class="chip"><div class="sw" style="background:#0c0c0d"></div><div class="meta"><b>Black 2</b><code>#0C0C0D</code></div></div>
+    </div>
+
+    <div style="margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div class="card2"><b style="font-size:15px">Background</b><p style="font-size:14px;color:var(--body);margin-top:6px">White &amp; soft-grey surfaces. ~70% of every screen stays empty and calm.</p></div>
+      <div class="card2"><b style="font-size:15px">Text</b><p style="font-size:14px;color:var(--body);margin-top:6px">Ink for headings, body grey for paragraphs, faint grey for captions.</p></div>
+      <div class="card2"><b style="font-size:15px">Overlay / accent</b><p style="font-size:14px;color:var(--body);margin-top:6px">Grey fills and a single black primary action. Dark sections invert to white-on-ink.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO -->
+<section class="section-soft" id="logo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="pip"></span>02 — Logo</span>
+      <h2>The mark, in <span class="serif">mono.</span></h2>
+      <p>The OSC mark is recoloured to a single tone per context — never multicolour on the clean system. Preserve clear space equal to the height of the “O”.</p>
+    </div>
+    <div class="logo-grid">
+      <div class="logo-cell" style="background:#fff"><img src="assets/logo-black.png" alt="black logo"/><span class="cap">Black · #1D1D1F — on white</span></div>
+      <div class="logo-cell soft"><img src="assets/logo-grey.png" alt="grey logo"/><span class="cap">Grey · #86868B — muted contexts</span></div>
+      <div class="logo-cell dark"><img src="assets/logo-white.png" alt="white logo"/><span class="cap">White · #FFFFFF — on ink</span></div>
+    </div>
+    <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="card2" style="display:flex;align-items:center;gap:14px;background:#fff"><img src="assets/logo-black.png" style="height:30px" alt="lockup"/><b style="font-size:18px;letter-spacing:-.03em">OSC<span style="color:var(--faint);font-weight:500"> Professionals</span></b><span style="margin-left:auto;font-size:12px;color:var(--muted)">Primary lockup</span></div>
+      <div class="card2" style="display:flex;align-items:center;gap:14px;background:var(--ink)"><img src="assets/logo-white.png" style="height:30px" alt="lockup dark"/><b style="font-size:18px;letter-spacing:-.03em;color:#fff">OSC<span style="color:rgba(255,255,255,.5);font-weight:500"> Professionals</span></b><span style="margin-left:auto;font-size:12px;color:rgba(255,255,255,.5)">Inverse lockup</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPE -->
+<section id="type">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="pip"></span>03 — Typography</span>
+      <h2>Grotesk &amp; a <span class="serif">serif whisper.</span></h2>
+      <p><b>Hanken Grotesk</b> carries everything — headlines, UI, body. <b>Newsreader</b> italic appears only as an occasional accent word for warmth.</p>
+    </div>
+    <div class="specimen">
+      <div class="card2"><div class="glyph" style="font-family:var(--sans)">Ag</div><span class="badge">Primary · everything</span><h3 style="margin-top:12px;font-size:22px">Hanken Grotesk</h3><p style="color:var(--body);font-size:14px;margin-top:4px">A warm humanist grotesque — clean at every size with a generous x-height.</p><div class="weights"><span style="font-weight:400">Regular</span><span style="font-weight:500">Medium</span><span style="font-weight:600">Semibold</span><span style="font-weight:700">Bold</span><span style="font-weight:800">Extra</span></div></div>
+      <div class="card2"><div class="glyph serif" style="font-family:var(--serif)">Ag</div><span class="badge">Accent · italic only</span><h3 style="margin-top:12px;font-size:22px">Newsreader</h3><p style="color:var(--body);font-size:14px;margin-top:4px">A literary serif used sparingly in italic to add editorial character to headlines.</p><div class="weights"><span class="serif" style="font-size:19px">world-class</span><span class="serif" style="font-size:19px">measurable</span><span class="serif" style="font-size:19px">the long run</span></div></div>
+    </div>
+    <div style="margin-top:36px">
+      <div class="typerow"><div class="lab">Display<span>Hanken · 72 / 1.0</span></div><div style="font-size:60px;font-weight:700;letter-spacing:-.04em;line-height:1">World-class <span class="serif" style="font-weight:500">commerce</span></div></div>
+      <div class="typerow"><div class="lab">H2<span>Hanken · 44 / 1.05</span></div><div style="font-size:40px;font-weight:700;letter-spacing:-.035em">Shopify &amp; Magento, mastered</div></div>
+      <div class="typerow"><div class="lab">H3<span>Hanken · 19 / 1.3</span></div><div style="font-size:19px;font-weight:700;letter-spacing:-.02em">Migration without downtime</div></div>
+      <div class="typerow"><div class="lab">Body<span>Hanken · 17 / 1.6</span></div><div style="font-size:17px;color:var(--body);max-width:560px">From storefront design to performance optimization, we create, build, and maintain eCommerce solutions that scale with your business.</div></div>
+      <div class="typerow"><div class="lab">Caption<span>Hanken · 13 · muted</span></div><div style="font-size:13px;color:var(--muted);font-weight:500">Established 2000 · 500+ clients worldwide</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPONENTS -->
+<section class="section-soft" id="components">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="pip"></span>04 — Components</span>
+      <h2>Hairline <span class="serif">building blocks.</span></h2>
+      <p>1px borders, soft shadows, generous radius. One black primary action per view.</p>
+    </div>
+    <div class="comp-grid">
+      <div class="card2" style="background:#fff">
+        <h3 style="font-size:16px;margin-bottom:16px">Buttons</h3>
+        <div class="btnrow"><a class="btn btn-primary">Start your project →</a><a class="btn btn-secondary">View work</a></div>
+        <div class="btnrow"><a class="btn btn-ghost">Sign in</a><a class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        <h3 style="font-size:16px;margin:24px 0 14px">Badges</h3>
+        <div class="btnrow"><span class="badge solid">Since 2000</span><span class="badge">Shopify Plus</span><span class="badge">Adobe Commerce</span></div>
+        <h3 style="font-size:16px;margin:24px 0 14px">Input</h3>
+        <input class="inp" placeholder="you@company.com" />
+      </div>
+      <div class="card2">
+        <h3 style="font-size:16px;margin-bottom:16px">Service card</h3>
+        <div class="svc-card" style="background:#fff"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9l9-6 9 6v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div><h3>Magento Development</h3><p>Custom Adobe Commerce builds, modules, and B2B storefronts engineered for scale.</p></div>
+        <h3 style="font-size:16px;margin:22px 0 14px">Stat</h3>
+        <div style="border:1px solid var(--line-2);border-radius:12px;padding:24px"><div style="font-size:44px;font-weight:700;letter-spacing:-.04em;line-height:1">500+</div><div style="font-size:14px;color:var(--muted);margin-top:8px">Happy customers worldwide</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section id="principles">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="pip"></span>05 — Voice</span>
+      <h2>Design <span class="serif">principles.</span></h2>
+    </div>
+    <div class="princ">
+      <div class="card2"><div class="num">01</div><h3 style="font-size:19px;margin:8px 0 6px">Restraint is the brand</h3><p style="font-size:14.5px;color:var(--body)">Whitespace and monochrome signal premium expertise. Remove before you add.</p></div>
+      <div class="card2"><div class="num">02</div><h3 style="font-size:19px;margin:8px 0 6px">Proof over promises</h3><p style="font-size:14.5px;color:var(--body)">Lead with real numbers, clients, and results — 26 years of credibility.</p></div>
+      <div class="card2"><div class="num">03</div><h3 style="font-size:19px;margin:8px 0 6px">One clear action</h3><p style="font-size:14.5px;color:var(--body)">A single black primary CTA per view. Everything points to a strategy call.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-bot" style="border:none;margin:0;padding:0;justify-content:center"><span>This guide powers the OSC clean homepage · <a href="home-clean.html">View it →</a></span></div>
+  </div>
+</footer>
+
+<script>
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>8),{passive:true});
+</script>
+</body>
+</html>
