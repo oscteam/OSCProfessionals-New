@@ -243,6 +243,10 @@ section{padding:84px 0}
 .why-visual .c2{bottom:30px;right:30px}
 
 /* ================= INDUSTRIES ================= */
+.top.tx, .top.tx-2, .top.tx-3 {background-size: auto;background-size: 100%;}
+.top.tx {background: url("retail-entrepure.jpg") no-repeat;}
+.top.tx-2 {background: url("agencies.jpg") no-repeat;}
+.top.tx-3 {background: url("b2b wholesale.jpg") no-repeat;}
 .ind-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .ind{border:1px solid var(--line-2);border-radius:var(--radius);overflow:hidden;background:var(--white);transition:.22s}
 .ind:hover{border-color:var(--line-3);box-shadow:var(--shadow-sm);transform:translateY(-3px)}
