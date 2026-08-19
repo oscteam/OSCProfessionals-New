@@ -264,6 +264,12 @@ section{padding:84px 0}
 .tx-2{background:linear-gradient(135deg,#f3f3f5,#e4e4e8)}
 .tx-3{background:linear-gradient(135deg,#efeff1,#dadade)}
 
+.shot.tx {background: url("rokher.jpg")no-repeat;background-size: 100%;}
+.shot.tx-2 {background: url("vitaliving.jpg")no-repeat;background-size: 100%;}
+.shot.tx-3 {background: url("drivenbystyle.jpg")no-repeat;background-size: 100%;}
+.shot.tx-4 {background: url("efuma.jpg")no-repeat;background-size: 100%;}
+
+
 /* ================= PORTFOLIO ================= */
 .port-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 .port{border:1px solid var(--line-2);border-radius:var(--radius);overflow:hidden;background:var(--white);transition:.22s;display:block}
