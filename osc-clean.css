@@ -198,7 +198,7 @@ section{padding:84px 0}
 .sec-head p{font-size:18px;color:var(--body);margin-top:16px;line-height:1.55}
 
 /* ================= SERVICES ================= */
-#services,#industries, #review {background-image: url("light-blue.jpg");background-repeat: no-repeat;background-size: cover;}
+#services,#industries, #review {background-image: url("osc-hero-bg.png");background-repeat: no-repeat;background-size: cover;}
 .svc-tabs{display:inline-flex;gap:4px;background:var(--bg-soft);border:1px solid var(--line);padding:4px;border-radius:12px;margin-bottom:40px}
 .svc-tab{padding:9px 18px;border-radius:9px;border:none;background:transparent;font-family:var(--sans);font-weight:600;font-size:14.5px;color:var(--muted);cursor:pointer;transition:.18s;letter-spacing:-.01em}
 .svc-tab.active{background:var(--white);color:var(--ink);box-shadow:var(--shadow-xs)}
