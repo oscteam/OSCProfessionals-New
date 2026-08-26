@@ -217,6 +217,14 @@ section{padding:84px 0}
 .svc-card:hover .ar{opacity:1;transform:none;color:var(--ink)}
 .svc-card .ar svg{width:18px;height:18px}
 
+.ic6 {background: #fde8f1 !important;}
+.ic2 {background: #f3f0fd !important;}
+.ic3 {background: #ebf6f9 !important;}
+.ic4 {background: #fef2e9 !important;}
+.ic1 {background: #e9effe !important;}
+.ic5 {background: #f3f9ed !important;}
+
+
 /* ================= STATS ================= */
 .stats{border-radius:var(--radius-lg);background:var(--white);display:grid;grid-template-columns:repeat(4,1fr)}
 .stat{padding:40px 32px;border-right:1px solid var(--line)}
