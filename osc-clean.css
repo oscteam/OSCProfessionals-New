@@ -187,7 +187,44 @@ header.site:hover{background:rgba(247,247,248,.92);border-color:var(--line);box-
 .strip .set{display:flex;gap:34px;flex-wrap:wrap;align-items:center;justify-content:center}
 .strip .set span{font-size:17px;font-weight:700;color:var(--faint);letter-spacing:-.02em;transition:.2s}
 .strip .set span:hover{color:var(--ink)}
-    .stats-section {
+      }
+
+/* ================= SECTION SCAFFOLD ================= */
+section{padding:84px 0}
+/* .section-soft{background:var(--bg-soft)} */
+.sec-head{max-width:680px;margin-bottom:56px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head h2{font-size:clamp(31px,4.2vw,46px);letter-spacing:-.035em;margin-top:16px;line-height:1.04}
+.sec-head h2 .serif{font-size:1.03em}
+.sec-head p{font-size:18px;color:var(--body);margin-top:16px;line-height:1.55}
+
+/* ================= SERVICES ================= */
+#services,#industries, #review {background-image: url("osc-hero-bg.png");background-repeat: no-repeat;background-size: cover;}
+.svc-tabs{display:inline-flex;gap:4px;background:var(--bg-soft);border:1px solid var(--line);padding:4px;border-radius:12px;margin-bottom:40px}
+.svc-tab{padding:9px 18px;border-radius:9px;border:none;background:transparent;font-family:var(--sans);font-weight:600;font-size:14.5px;color:var(--muted);cursor:pointer;transition:.18s;letter-spacing:-.01em}
+.svc-tab.active{background:var(--white);color:var(--ink);box-shadow:var(--shadow-xs)}
+.svc-panel{display:none}
+.svc-panel.active{display:block;animation:fade .4s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc-card{background:var(--white);border:1px solid var(--line-2);border-radius:var(--radius);padding:26px;transition:.22s;position:relative}
+.svc-card:hover{border-color:var(--line-3);box-shadow:var(--shadow-sm);transform:translateY(-3px)}
+.svc-card .ic{width:42px;height:42px;border-radius:11px;background:var(--bg-soft);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink);margin-bottom:18px;transition:.22s}
+.svc-card:hover .ic{background:var(--ink);color:#fff;border-color:var(--ink)}
+.svc-card h3{font-size:18.5px;font-weight:700;letter-spacing:-.02em;margin-bottom:7px}
+.svc-card p{font-size:14.5px;color:var(--body);line-height:1.55}
+.svc-card .ar{position:absolute;top:26px;right:26px;color:var(--faint);opacity:0;transform:translate(-4px,0);transition:.22s}
+.svc-card:hover .ar{opacity:1;transform:none;color:var(--ink)}
+.svc-card .ar svg{width:18px;height:18px}
+
+/* ================= STATS ================= */
+.stats{border-radius:var(--radius-lg);overflow:hidden;background:var(--white);display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:40px 32px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none}
+.stat .n{font-size:clamp(38px,4.6vw,52px);font-weight:700;letter-spacing:-.04em;line-height:1}
+.stat .l{font-size:14.5px;color:var(--muted);margin-top:10px;font-weight:500}
+
+.stats-section {
       position: relative;
       isolation: isolate;
       min-height: 100vh;
@@ -637,43 +674,6 @@ header.site:hover{background:rgba(247,247,248,.92);border-color:var(--line);box-
         transform: none !important;
       }
     }
-  </style>
-
-
-/* ================= SECTION SCAFFOLD ================= */
-section{padding:84px 0}
-/* .section-soft{background:var(--bg-soft)} */
-.sec-head{max-width:680px;margin-bottom:56px}
-.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
-.sec-head h2{font-size:clamp(31px,4.2vw,46px);letter-spacing:-.035em;margin-top:16px;line-height:1.04}
-.sec-head h2 .serif{font-size:1.03em}
-.sec-head p{font-size:18px;color:var(--body);margin-top:16px;line-height:1.55}
-
-/* ================= SERVICES ================= */
-#services,#industries, #review {background-image: url("osc-hero-bg.png");background-repeat: no-repeat;background-size: cover;}
-.svc-tabs{display:inline-flex;gap:4px;background:var(--bg-soft);border:1px solid var(--line);padding:4px;border-radius:12px;margin-bottom:40px}
-.svc-tab{padding:9px 18px;border-radius:9px;border:none;background:transparent;font-family:var(--sans);font-weight:600;font-size:14.5px;color:var(--muted);cursor:pointer;transition:.18s;letter-spacing:-.01em}
-.svc-tab.active{background:var(--white);color:var(--ink);box-shadow:var(--shadow-xs)}
-.svc-panel{display:none}
-.svc-panel.active{display:block;animation:fade .4s ease}
-@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.svc-card{background:var(--white);border:1px solid var(--line-2);border-radius:var(--radius);padding:26px;transition:.22s;position:relative}
-.svc-card:hover{border-color:var(--line-3);box-shadow:var(--shadow-sm);transform:translateY(-3px)}
-.svc-card .ic{width:42px;height:42px;border-radius:11px;background:var(--bg-soft);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink);margin-bottom:18px;transition:.22s}
-.svc-card:hover .ic{background:var(--ink);color:#fff;border-color:var(--ink)}
-.svc-card h3{font-size:18.5px;font-weight:700;letter-spacing:-.02em;margin-bottom:7px}
-.svc-card p{font-size:14.5px;color:var(--body);line-height:1.55}
-.svc-card .ar{position:absolute;top:26px;right:26px;color:var(--faint);opacity:0;transform:translate(-4px,0);transition:.22s}
-.svc-card:hover .ar{opacity:1;transform:none;color:var(--ink)}
-.svc-card .ar svg{width:18px;height:18px}
-
-/* ================= STATS ================= */
-.stats{border-radius:var(--radius-lg);overflow:hidden;background:var(--white);display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{padding:40px 32px;border-right:1px solid var(--line)}
-.stat:last-child{border-right:none}
-.stat .n{font-size:clamp(38px,4.6vw,52px);font-weight:700;letter-spacing:-.04em;line-height:1}
-.stat .l{font-size:14.5px;color:var(--muted);margin-top:10px;font-weight:500}
 
 /* ================= WHY (split) ================= */
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
