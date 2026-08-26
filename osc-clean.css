@@ -218,12 +218,13 @@ section{padding:84px 0}
 .svc-card .ar svg{width:18px;height:18px}
 
 /* ================= STATS ================= */
-.stats{border-radius:var(--radius-lg);overflow:hidden;background:var(--white);display:grid;grid-template-columns:repeat(4,1fr)}
+.stats{border-radius:var(--radius-lg);background:var(--white);display:grid;grid-template-columns:repeat(4,1fr)}
 .stat{padding:40px 32px;border-right:1px solid var(--line)}
 .stat:last-child{border-right:none}
 .stat .n{font-size:clamp(38px,4.6vw,52px);font-weight:700;letter-spacing:-.04em;line-height:1}
 .stat .l{font-size:14.5px;color:var(--muted);margin-top:10px;font-weight:500}
 
+.section-soft {padding: 54px 0 54px 0;}
 .stats-section {
       position: relative;
       isolation: isolate;
