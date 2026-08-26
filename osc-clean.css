@@ -224,6 +224,11 @@ section{padding:84px 0}
 .ic1 {background: #e9effe !important;}
 .ic5 {background: #f3f9ed !important;}
 
+.ic1 svg {width: 50px;}
+.ic2 svg {width: 50px;}
+.ic3 svg {width: 50px;}
+
+
 
 /* ================= STATS ================= */
 .stats{border-radius:var(--radius-lg);background:var(--white);display:grid;grid-template-columns:repeat(4,1fr)}
