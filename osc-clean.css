@@ -144,6 +144,9 @@ header.site:hover{background:rgba(247,247,248,.92);border-color:var(--line);box-
 .hero-cta{display:flex;gap:12px;justify-content:center;margin-top:34px;flex-wrap:wrap}
 .hero-note{margin-top:18px;font-size:13.5px;color:var(--faint)}
 
+/* ================= HERO1 ================= */
+.hero1 .reveal.in {margin: 20px 0;display: revert;width: 50%;}
+.hero.hero1 {background: url("hero-section-banner.png");background-size: cover;}
 /* browser mock */
 .mock-wrap{margin-top:64px;padding-bottom:90px;position:relative}
 .mock{max-width:1040px;margin:0 auto;background:var(--white);border:1px solid var(--line-2);border-radius:16px;box-shadow:var(--shadow-lg);overflow:hidden;text-align:left}
