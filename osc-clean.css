@@ -666,7 +666,7 @@ section {padding: 54px 0 54px 0;}
 .why-list{display:flex;flex-direction:column}
 .why-item{display:flex;gap:16px;padding:22px 0;border-top:1px solid var(--line)}
 .why-item:first-child{border-top:none;padding-top:0}
-.why-item .ic{flex:0 0 40px;width:40px;height:40px;border-radius:10px;border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.why-item .ic{flex:0 0 60px;width:60px;height:60px;border-radius:40px;border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;color:var(--ink)}
 .why-item .ic svg{width:19px;height:19px}
 .why-item h4{font-size:17px;font-weight:700;letter-spacing:-.02em;margin-bottom:3px}
 .why-item p{font-size:14.5px;color:var(--body);line-height:1.55}
